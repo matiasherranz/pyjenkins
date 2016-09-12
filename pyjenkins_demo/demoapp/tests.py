@@ -6,7 +6,11 @@ class DemoTestCase(TestCase):
     def setUp(self):
         self.odd_numbers = range(1, 11, 2)  # [1, 3, 5, 7, 9]
         self.even_numbers = range(2, 12, 2) # [2, 4, 6, 8, 10]
-
+        
+        # let's hijack this sweet and nice tests :D
+        self.even_numbers.append(3)
+        self.odd_numbers.append(2)
+        
     def test_evens_are_even(self):
         for odd in self.odd_numbers:
             self.assertEqual(odd % 2, 1)
