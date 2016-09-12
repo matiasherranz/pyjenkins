@@ -1,3 +1,4 @@
 # Python demo project for Jenkins course, requiquirements file
 
 Django==1.10.1
+coverage==4.2
